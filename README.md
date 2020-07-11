@@ -1,17 +1,16 @@
+<a href="https://www.linkedin.com/in/miguelsoliv">
+  <img alt="Miguel Oliveira's LinkedIn" src="https://img.shields.io/badge/-LinkedIn-222222?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/miguelsoliv">
+</a>
+<a href="https://www.facebook.com/miguelosoares">
+  <img alt="Miguel Oliveira's Facebook" src="https://img.shields.io/badge/-Facebook-222222?style=flat-square&logo=Facebook&logoColor=white&link=https://www.facebook.com/miguelosoares">
+</a>
+<a href="mailto:miguelosoares1@hotmail.com">
+  <img alt="Miguel Oliveira's Email" src="https://img.shields.io/badge/Email-222222?style=flat-square&logo=gmail&logoColor=white">
+</a>
+
 <h2>Hi there <img src="https://github.com/miguelsoliv/miguelsoliv/blob/master/.github/hi.gif" width=20 /> Hope you are doing great today!</h2>
-<h3>Before you continue, you may want to take a look at this infos first:</h3>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/miguelsoliv">
-    <img alt="Miguel Oliveira's LinkedIn" src="https://img.shields.io/badge/-LinkedIn-222222?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/miguelsoliv">
-  </a>
-  <a href="https://www.facebook.com/miguelosoares">
-    <img alt="Miguel Oliveira's Facebook" src="https://img.shields.io/badge/-Facebook-222222?style=flat-square&logo=Facebook&logoColor=white&link=https://www.facebook.com/miguelosoares">
-  </a>
-  <a href="mailto:miguelosoares1@hotmail.com">
-    <img alt="Miguel Oliveira's Email" src="https://img.shields.io/badge/Email-222222?style=flat-square&logo=gmail&logoColor=white">
-  </a>
-  <br>
   <img src="https://github.com/miguelsoliv/miguelsoliv/blob/master/.github/ff7.gif" width=175 />
 </p>
 
