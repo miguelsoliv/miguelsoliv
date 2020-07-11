@@ -1,16 +1,105 @@
-### Hi there 👋
+<h2>Hi there <img src=".github/hi.gif" width=20 /> Hope you are doing great today!</h2>
+<h3>Before you continue, you may want to take a look at this infos first:</h3>
 
-<!--
-**miguelsoliv/miguelsoliv** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <a href="https://www.linkedin.com/in/miguelsoliv">
+    <img alt="Miguel Oliveira's LinkedIn" src="https://img.shields.io/badge/-LinkedIn-222222?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/miguelsoliv">
+  </a>
+  <a href="https://www.facebook.com/miguelosoares">
+    <img alt="Miguel Oliveira's Facebook" src="https://img.shields.io/badge/-Facebook-222222?style=flat-square&logo=Facebook&logoColor=white&link=https://www.facebook.com/miguelosoares">
+  </a>
+  <a href="mailto:miguelosoares1@hotmail.com">
+    <img alt="Miguel Oliveira's Email" src="https://img.shields.io/badge/Email-222222?style=flat-square&logo=gmail&logoColor=white">
+  </a>
+  <img src=".github/ff7.gif" width=175 />
+</p>
 
-Here are some ideas to get you started:
+```typescript
+interface IStat {
+  description: string;
+  skills: string[];
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+interface ICharacterSheet {
+  name: string;
+  class: string;
+  level: number;
+  languages: Array<{ name: string; proficiency: 1 | 2 | 3 | 4 | 5 }>;
+  traits: Array<{ name: string; greatness: 1 | 2 | 3 | 4 | 5 }>;
+  stats: {
+    strength: IStat;
+    constitution: IStat;
+    dexterity: IStat;
+    intelligence: IStat;
+    wisdom: IStat;
+    charisma: IStat;
+  };
+  equipment: Array<{ icon: string; amount: number }>;
+}
+
+export default (): ICharacterSheet => ({
+  name: 'Miguel Soares de Oliveira',
+  class: 'Back End/Mobile Developer',
+  level: 24,
+  languages: [
+    { name: 'portuguese', proficiency: 5 },
+    { name: 'english', proficiency: 3 },
+  ],
+  traits: [
+    { name: 'nodejs', greatness: 4 },
+    { name: 'expressjs', greatness: 5 },
+    { name: 'git', greatness: 5 },
+    { name: 'react-native', greatness: 4 },
+    { name: 'uml', greatness: 4 },
+    { name: 'java', greatness: 3 },
+    { name: 'typescript', greatness: 4 },
+    { name: 'c#', greatness: 4 },
+    { name: 'css', greatness: 3 },
+    { name: 'scrum', greatness: 3 },
+    { name: 'sql', greatness: 4 },
+    { name: 'html', greatness: 2 },
+    { name: 'javascript', greatness: 5 },
+    { name: 'docker', greatness: 2 },
+    { name: 'jest', greatness: 3 },
+    { name: 'entity-framework', greatness: 4 },
+  ],
+  stats: {
+    strength: {
+      description: '[💪]: Measuring physical power and carrying capacity',
+      skills: ['🏋️‍♂️'],
+    },
+    constitution: {
+      description: '[🏃‍♂️]: Measuring endurance, stamina and good health',
+      skills: ['🏊‍♂️', '🚴‍♂️'],
+    },
+    dexterity: {
+      description:
+        '[🤹]: Measuring agility, balance, coordination and reflexes',
+      skills: ['🤾‍♂️', '🎮'],
+    },
+    intelligence: {
+      description:
+        '[🤓]: Measuring deductive reasoning, knowledge, memory, logic and rationality',
+      skills: ['📚'],
+    },
+    wisdom: {
+      description:
+        '[💭]: Measuring self-awareness, common sense, restraint, perception and insight',
+      skills: ['🧩'],
+    },
+    charisma: {
+      description:
+        '[😎]: Measuring force of personality, persuasiveness, leadership and successful planning',
+      skills: ['🤝'],
+    },
+  },
+  equipment: [
+    { icon: '☕', amount: parseInt('∞', 10) },
+    { icon: '🍫', amount: parseInt('∞', 10) },
+    { icon: '🚰', amount: parseInt('∞', 10) },
+    { icon: '🍕', amount: 2 },
+    { icon: '🍌', amount: 8 },
+  ],
+});
+
+```
