@@ -1,4 +1,4 @@
-<h2>Hi there <img src=".github/hi.gif" width=20 /> Hope you are doing great today!</h2>
+<h2>Hi there <img src="https://github.com/miguelsoliv/miguelsoliv/blob/master/.github/hi.gif" width=20 /> Hope you are doing great today!</h2>
 <h3>Before you continue, you may want to take a look at this infos first:</h3>
 
 <p align="center">
@@ -11,7 +11,8 @@
   <a href="mailto:miguelosoares1@hotmail.com">
     <img alt="Miguel Oliveira's Email" src="https://img.shields.io/badge/Email-222222?style=flat-square&logo=gmail&logoColor=white">
   </a>
-  <img src=".github/ff7.gif" width=175 />
+  <br>
+  <img src="https://github.com/miguelsoliv/miguelsoliv/blob/master/.github/ff7.gif" width=175 />
 </p>
 
 ```typescript
@@ -73,23 +74,19 @@ export default (): ICharacterSheet => ({
       skills: ['🏊‍♂️', '🚴‍♂️'],
     },
     dexterity: {
-      description:
-        '[🤹]: Measuring agility, balance, coordination and reflexes',
+      description: '[🤹]: Measuring agility, balance, coordination and reflexes',
       skills: ['🤾‍♂️', '🎮'],
     },
     intelligence: {
-      description:
-        '[🤓]: Measuring deductive reasoning, knowledge, memory, logic and rationality',
+      description: '[🤓]: Measuring deductive reasoning, knowledge, memory, logic and rationality',
       skills: ['📚'],
     },
     wisdom: {
-      description:
-        '[💭]: Measuring self-awareness, common sense, restraint, perception and insight',
+      description: '[💭]: Measuring self-awareness, common sense, restraint, perception and insight',
       skills: ['🧩'],
     },
     charisma: {
-      description:
-        '[😎]: Measuring force of personality, persuasiveness, leadership and successful planning',
+      description: '[😎]: Measuring force of personality, persuasiveness, leadership and successful planning',
       skills: ['🤝'],
     },
   },
