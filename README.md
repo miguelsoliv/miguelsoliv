@@ -22,7 +22,7 @@ interface IStat {
 
 interface ICharacterSheet {
   name: string;
-  class: string;
+  class: string | string[];
   level: number;
   languages: Array<{ name: string; proficiency: 1 | 2 | 3 | 4 | 5 }>;
   traits: Array<{ name: string; greatness: 1 | 2 | 3 | 4 | 5 }>;
@@ -39,7 +39,7 @@ interface ICharacterSheet {
 
 export default (): ICharacterSheet => ({
   name: 'Miguel Soares de Oliveira',
-  class: 'Back End/Mobile Developer',
+  class: ['Back End Developer', 'Mobile Developer'],
   level: 24,
   languages: [
     { name: 'portuguese', proficiency: 5 },
@@ -61,7 +61,6 @@ export default (): ICharacterSheet => ({
     { name: 'javascript', greatness: 5 },
     { name: 'docker', greatness: 2 },
     { name: 'jest', greatness: 3 },
-    { name: 'entity-framework', greatness: 4 },
   ],
   stats: {
     strength: {
@@ -91,11 +90,8 @@ export default (): ICharacterSheet => ({
   },
   equipment: [
     { icon: '☕', amount: parseInt('∞', 10) },
-    { icon: '🍫', amount: parseInt('∞', 10) },
-    { icon: '🚰', amount: parseInt('∞', 10) },
-    { icon: '🍕', amount: 2 },
-    { icon: '🍌', amount: 8 },
+    { icon: '🍫', amount: 10 },
+    { icon: '🍕', amount: 3 },
   ],
 });
-
 ```
