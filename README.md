@@ -10,10 +10,6 @@
 
 <h2>Hi there <img src="https://github.com/miguelsoliv/miguelsoliv/blob/master/.github/hi.gif" width=20 /> Hope you are doing great today!</h2>
 
-<p align="center">
-  <img src="https://github.com/miguelsoliv/miguelsoliv/blob/master/.github/ff7.gif" width=175 />
-</p>
-
 ```typescript
 interface IStat {
   description: string;
@@ -40,22 +36,22 @@ interface ICharacterSheet {
 export default (): ICharacterSheet => ({
   name: 'Miguel Soares de Oliveira',
   class: ['Back End Developer', 'Mobile Developer'],
-  level: 24,
+  level: 25,
   languages: [
     { name: 'portuguese', proficiency: 5 },
     { name: 'english', proficiency: 3 },
   ],
   traits: [
-    { name: 'nodejs', greatness: 4 },
+    { name: 'nodejs', greatness: 5 },
     { name: 'expressjs', greatness: 5 },
     { name: 'git', greatness: 5 },
     { name: 'react-native', greatness: 4 },
     { name: 'uml', greatness: 4 },
-    { name: 'java', greatness: 3 },
-    { name: 'typescript', greatness: 4 },
+    { name: 'java', greatness: 2 },
+    { name: 'typescript', greatness: 5 },
     { name: 'c#', greatness: 4 },
     { name: 'css', greatness: 3 },
-    { name: 'scrum', greatness: 3 },
+    { name: 'scrum', greatness: 4 },
     { name: 'sql', greatness: 4 },
     { name: 'html', greatness: 2 },
     { name: 'javascript', greatness: 5 },
