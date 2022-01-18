@@ -30,7 +30,7 @@ interface ICharacterSheet {
     wisdom: IStat;
     charisma: IStat;
   };
-  equipment: Array<{ icon: string; amount: number }>;
+  equipment: string[];
 }
 
 export default (): ICharacterSheet => ({
@@ -49,14 +49,14 @@ export default (): ICharacterSheet => ({
     { name: 'uml', greatness: 4 },
     { name: 'java', greatness: 2 },
     { name: 'typescript', greatness: 5 },
-    { name: 'c#', greatness: 4 },
     { name: 'css', greatness: 3 },
     { name: 'scrum', greatness: 4 },
     { name: 'sql', greatness: 4 },
     { name: 'html', greatness: 2 },
     { name: 'javascript', greatness: 5 },
     { name: 'docker', greatness: 2 },
-    { name: 'jest', greatness: 3 },
+    { name: 'jest', greatness: 4 },
+    { name: 'supertest', greatness: 4 },
   ],
   stats: {
     strength: {
@@ -75,19 +75,11 @@ export default (): ICharacterSheet => ({
       description: '[🤓]: Measuring deductive reasoning, knowledge, memory, logic and rationality',
       skills: ['📚'],
     },
-    wisdom: {
-      description: '[💭]: Measuring self-awareness, common sense, restraint, perception and insight',
-      skills: ['🧩'],
-    },
     charisma: {
       description: '[😎]: Measuring force of personality, persuasiveness, leadership and successful planning',
       skills: ['🤝'],
     },
   },
-  equipment: [
-    { icon: '☕', amount: parseInt('∞', 10) },
-    { icon: '🍫', amount: 10 },
-    { icon: '🍕', amount: 3 },
-  ],
+  equipment: ['☕', '🍫', '🍕', '🧉'],
 });
 ```
