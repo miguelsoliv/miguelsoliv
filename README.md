@@ -11,24 +11,18 @@
 <h2>Hi there <img src="https://github.com/miguelsoliv/miguelsoliv/blob/master/.github/hi.gif" width=20 /> Hope you are doing great today!</h2>
 
 ```typescript
-interface IStat {
-  description: string;
-  skills: string[];
-}
-
 interface ICharacterSheet {
   name: string;
   class: string | string[];
   level: number;
   languages: Array<{ name: string; proficiency: 1 | 2 | 3 | 4 | 5 }>;
   traits: Array<{ name: string; greatness: 1 | 2 | 3 | 4 | 5 }>;
-  stats: {
-    strength: IStat;
-    constitution: IStat;
-    dexterity: IStat;
-    intelligence: IStat;
-    wisdom: IStat;
-    charisma: IStat;
+  statsSkills: {
+    strength: string[];
+    constitution: string[];
+    dexterity: string[];
+    intelligence: string[];
+    charisma: string[];
   };
   equipment: string[];
 }
@@ -49,36 +43,21 @@ export default (): ICharacterSheet => ({
     { name: 'uml', greatness: 4 },
     { name: 'java', greatness: 2 },
     { name: 'typescript', greatness: 5 },
-    { name: 'css', greatness: 3 },
+    { name: 'css', greatness: 4 },
     { name: 'scrum', greatness: 4 },
-    { name: 'sql', greatness: 4 },
-    { name: 'html', greatness: 2 },
+    { name: 'sql', greatness: 2 },
+    { name: 'html', greatness: 3 },
     { name: 'javascript', greatness: 5 },
     { name: 'docker', greatness: 2 },
     { name: 'jest', greatness: 4 },
     { name: 'supertest', greatness: 4 },
   ],
-  stats: {
-    strength: {
-      description: '[💪]: Measuring physical power and carrying capacity',
-      skills: ['🏋️‍♂️'],
-    },
-    constitution: {
-      description: '[🏃‍♂️]: Measuring endurance, stamina and good health',
-      skills: ['🏊‍♂️', '🚴‍♂️'],
-    },
-    dexterity: {
-      description: '[🤹]: Measuring agility, balance, coordination and reflexes',
-      skills: ['🤾‍♂️', '🎮'],
-    },
-    intelligence: {
-      description: '[🤓]: Measuring deductive reasoning, knowledge, memory, logic and rationality',
-      skills: ['📚'],
-    },
-    charisma: {
-      description: '[😎]: Measuring force of personality, persuasiveness, leadership and successful planning',
-      skills: ['🤝'],
-    },
+  statsSkills: {
+    strength: ['🏋️‍♂️'],
+    constitution: ['🏊‍♂️', '🚴‍♂️', '🏃‍'],
+    dexterity: ['🤾‍♂️', '🎮'],
+    intelligence: ['📚', '👓'],
+    charisma: ['😎', '😁', '🤝'],
   },
   equipment: ['☕', '🍫', '🍕', '🧉'],
 });
