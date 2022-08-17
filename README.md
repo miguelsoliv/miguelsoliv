@@ -10,10 +10,10 @@
 
 <h2>Hi there <img src="https://github.com/miguelsoliv/miguelsoliv/blob/master/.github/hi.gif" width=20 /> Hope you are doing great today!</h2>
 
-```typescript
+```ts
 interface ICharacterSheet {
   name: string;
-  class: string | string[];
+  class: string[];
   level: number;
   languages: Array<{ name: string; proficiency: 1 | 2 | 3 | 4 | 5 }>;
   traits: Array<{ name: string; greatness: 1 | 2 | 3 | 4 | 5 }>;
@@ -30,7 +30,7 @@ interface ICharacterSheet {
 export default (): ICharacterSheet => ({
   name: 'Miguel Soares de Oliveira',
   class: ['Back End Developer', 'Mobile Developer'],
-  level: 25,
+  level: 26,
   languages: [
     { name: 'portuguese', proficiency: 5 },
     { name: 'english', proficiency: 3 },
@@ -44,12 +44,12 @@ export default (): ICharacterSheet => ({
     { name: 'java', greatness: 2 },
     { name: 'typescript', greatness: 5 },
     { name: 'css', greatness: 4 },
-    { name: 'scrum', greatness: 4 },
+    { name: 'scrum/kanban', greatness: 5 },
     { name: 'sql', greatness: 2 },
     { name: 'html', greatness: 3 },
     { name: 'javascript', greatness: 5 },
     { name: 'docker', greatness: 2 },
-    { name: 'jest', greatness: 4 },
+    { name: 'jest', greatness: 5 },
     { name: 'supertest', greatness: 4 },
   ],
   statsSkills: {
