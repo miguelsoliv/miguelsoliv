@@ -29,8 +29,8 @@ interface ICharacterSheet {
 
 export default (): ICharacterSheet => ({
   name: 'Miguel Soares de Oliveira',
-  class: ['Back End Developer', 'Mobile Developer'],
-  level: 26,
+  class: ['Full Stack Developer', 'Mobile Developer'],
+  level: new Date().getFullYear() - 1996,
   languages: [
     { name: 'portuguese', proficiency: 5 },
     { name: 'english', proficiency: 3 },
@@ -39,15 +39,15 @@ export default (): ICharacterSheet => ({
     { name: 'nodejs', greatness: 5 },
     { name: 'expressjs', greatness: 5 },
     { name: 'git', greatness: 5 },
+    { name: 'react', greatness: 4 },
     { name: 'react-native', greatness: 4 },
     { name: 'uml', greatness: 4 },
-    { name: 'java', greatness: 2 },
+    { name: 'javascript', greatness: 5 },
     { name: 'typescript', greatness: 5 },
     { name: 'css', greatness: 4 },
     { name: 'scrum/kanban', greatness: 5 },
     { name: 'sql', greatness: 2 },
     { name: 'html', greatness: 3 },
-    { name: 'javascript', greatness: 5 },
     { name: 'docker', greatness: 2 },
     { name: 'jest', greatness: 5 },
     { name: 'supertest', greatness: 4 },
