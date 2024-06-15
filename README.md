@@ -11,48 +11,104 @@
 <h2>Hi there <img src="https://github.com/miguelsoliv/miguelsoliv/blob/master/.github/hi.gif" width=20 /> Hope you are doing great today!</h2>
 
 ```ts
-interface ICharacterSheet {
-  name: string;
-  class: string[];
-  level: number;
-  languages: Array<{ name: string; proficiency: 1 | 2 | 3 | 4 | 5 }>;
-  traits: Array<{ name: string; greatness: 1 | 2 | 3 | 4 | 5 }>;
-  statsSkills: {
-    strength: string[];
-    constitution: string[];
-    dexterity: string[];
-    intelligence: string[];
-    charisma: string[];
-  };
-  equipment: string[];
+enum Language {
+  ENGLISH, PORTUGUESE
+}
+enum Proficiency {
+  BASIC, INTERMEDIATE, ADVANCED, PROFICIENT, FLUENT
+}
+enum Greatness {
+  NOVICE, APPRENTICE, VETERAN, MASTER, GRANDMASTER
 }
 
-export default (): ICharacterSheet => ({
+export const generateMyCharacterSheet = () => ({
   name: 'Miguel Soares de Oliveira',
   class: ['Full Stack Developer', 'Mobile Developer'],
   level: new Date().getFullYear() - 1996,
-  languages: [
-    { name: 'portuguese', proficiency: 5 },
-    { name: 'english', proficiency: 3 },
+  race: [
+    { name: Language.PORTUGUESE, knowledge: Proficiency.FLUENT },
+    { name: Language.ENGLISH, knowledge: Proficiency.ADVANCED },
   ],
-  traits: [
-    { name: 'nodejs', greatness: 5 },
-    { name: 'expressjs', greatness: 5 },
-    { name: 'git', greatness: 5 },
-    { name: 'react', greatness: 4 },
-    { name: 'react-native', greatness: 4 },
-    { name: 'uml', greatness: 4 },
-    { name: 'javascript', greatness: 5 },
-    { name: 'typescript', greatness: 5 },
-    { name: 'css', greatness: 4 },
-    { name: 'scrum/kanban', greatness: 5 },
-    { name: 'sql', greatness: 2 },
-    { name: 'html', greatness: 3 },
-    { name: 'docker', greatness: 2 },
-    { name: 'jest', greatness: 5 },
-    { name: 'supertest', greatness: 4 },
+  skills: [
+    { name: 'Scrum/Kanban/Scrumban', greatness: Greatness.GRANDMASTER },
+    { name: 'JavaScript/TypeScript', greatness: Greatness.GRANDMASTER },
+    {
+      name: 'Node.js',
+      greatness: Greatness.GRANDMASTER,
+      passives: [
+        { name: 'AdonisJS', greatness: Greatness.MASTER },
+        { name: 'Express.js', greatness: Greatness.GRANDMASTER },
+        { name: 'Fastify', greatness: Greatness.MASTER },
+        { name: 'Mongoose', greatness: Greatness.MASTER },
+        { name: 'Nest.js', greatness: Greatness.GRANDMASTER },
+        { name: 'Prisma', greatness: Greatness.VETERAN },
+        { name: 'TypeORM', greatness: Greatness.GRANDMASTER },
+      ],
+    },
+    {
+      name: 'React',
+      greatness: Greatness.MASTER,
+      passives: [
+        { name: 'Next.js', greatness: Greatness.VETERAN },
+        { name: 'Redux', greatness: Greatness.VETERAN },
+      ],
+    },
+    { name: 'React Native', greatness: Greatness.VETERAN },
+    { name: 'HTML', greatness: Greatness.VETERAN },
+    {
+      name: 'CSS',
+      greatness: Greatness.MASTER,
+      passives: [
+        { name: 'CSS-in-JS', greatness: Greatness.MASTER },
+      ],
+    },
+    {
+      name: 'Git',
+      greatness: Greatness.GRANDMASTER,
+      passives: [
+        { name: 'Gitflow', greatness: Greatness.GRANDMASTER },
+        { name: 'Trunk-Based Development', greatness: Greatness.GRANDMASTER },
+      ],
+    },
+    {
+      name: 'SQL',
+      greatness: 3,
+      passives: [
+        { name: 'MySQL', greatness: Greatness.VETERAN },
+        { name: 'PostgreSQL', greatness: Greatness.VETERAN },
+      ],
+    },
+    {
+      name: 'NoSQL',
+      greatness: Greatness.GRANDMASTER,
+      passives: [
+        { name: 'MongoDB', greatness: Greatness.GRANDMASTER },
+        { name: 'Redis', greatness: Greatness.GRANDMASTER },
+      ],
+    },
+    {
+      name: 'Event-Driven Architecture',
+      greatness: Greatness.GRANDMASTER,
+      passives: [
+        { name: 'BullMQ', greatness: Greatness.GRANDMASTER },
+        { name: 'Kafka', greatness: Greatness.GRANDMASTER },
+        { name: 'RabbitMQ', greatness: Greatness.GRANDMASTER },
+      ],
+    },
+    {
+      name: 'Unit/Integration Tests',
+      greatness: Greatness.GRANDMASTER,
+      passives: [
+        { name: 'Jest', greatness: Greatness.GRANDMASTER },
+        { name: 'Supertest', greatness: Greatness.GRANDMASTER },
+        { name: 'TS Mockito', greatness: Greatness.VETERAN },
+      ],
+    },
+    { name: 'AWS/GCP', greatness: Greatness.VETERAN },
+    { name: 'Swagger', greatness: Greatness.GRANDMASTER },
+    { name: 'Docker', greatness: Greatness.APPRENTICE },
   ],
-  statsSkills: {
+  stats: {
     strength: ['🏋️‍♂️'],
     constitution: ['🏊‍♂️', '🚴‍♂️', '🏃‍'],
     dexterity: ['🤾‍♂️', '🎮'],
