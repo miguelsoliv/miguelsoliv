@@ -12,14 +12,14 @@
 
 ```ts
 enum Language {
-  ENGLISH, PORTUGUESE
-}
+  ENGLISH, PORTUGUESE,
+};
 enum Proficiency {
-  BASIC, INTERMEDIATE, ADVANCED, PROFICIENT, FLUENT
-}
+  BASIC, INTERMEDIATE, ADVANCED, PROFICIENT, FLUENT,
+};
 enum Greatness {
-  NOVICE, APPRENTICE, VETERAN, MASTER, GRANDMASTER
-}
+  NOVICE, APPRENTICE, VETERAN, MASTER, GRANDMASTER,
+};
 
 export const generateMyCharacterSheet = () => ({
   name: 'Miguel Soares de Oliveira',
@@ -50,7 +50,7 @@ export const generateMyCharacterSheet = () => ({
       greatness: Greatness.MASTER,
       passives: [
         { name: 'Next.js', greatness: Greatness.VETERAN },
-        { name: 'Redux', greatness: Greatness.VETERAN },
+        { name: 'Redux/Zustand', greatness: Greatness.VETERAN },
       ],
     },
     { name: 'React Native', greatness: Greatness.VETERAN },
@@ -60,6 +60,8 @@ export const generateMyCharacterSheet = () => ({
       greatness: Greatness.MASTER,
       passives: [
         { name: 'CSS-in-JS', greatness: Greatness.MASTER },
+        { name: 'Panda CSS', greatness: Greatness.APPRENTICE },
+        { name: 'Tailwind CSS', greatness: Greatness.MASTER },
       ],
     },
     {
@@ -72,7 +74,7 @@ export const generateMyCharacterSheet = () => ({
     },
     {
       name: 'SQL',
-      greatness: 3,
+      greatness: Greatness.VETERAN,
       passives: [
         { name: 'MySQL', greatness: Greatness.VETERAN },
         { name: 'PostgreSQL', greatness: Greatness.VETERAN },
